@@ -30,7 +30,7 @@ body { font-family: sans-serif; }
 }
 
 #title1 { color: black; 
-    font-family: anton; 
+    font-family: anton, sans-serif;
     font-size: 49px ; 
     position: absolute ;
 text-align: center;
@@ -38,3 +38,4 @@ text-transform: uppercase;
 left: 37% ;
 top: 8%;
 }
+
