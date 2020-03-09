@@ -9,11 +9,20 @@ body { font-family: sans-serif; }
     left: 37% ;
     top: 20% ;
     position: absolute ;
+    text-align: center;
+
 }
 .box {
     background:rgba(214, 205, 255, 0.7); display: flex; justify-content: center; align-items: center;
     font-size: 2rem; color: #222;
+    display: flex;
+  flex-wrap: wrap;	
+  justify-content:center; 
 }
+.box {display: flex;
+    flex-wrap: wrap;	
+    justify-content:center ;}
+
 .box:hover {
     background: #fafafa;
     text-transform: uppercase;
@@ -22,7 +31,7 @@ body { font-family: sans-serif; }
     -o-transition:all .3s;
 }
 
-.box:link, .box:visited {
+.box:link, .box:visited, a:active {
     text-transform: uppercase;
     -moz-transition:all .6s;
     -webkit-transition:all .6s;
@@ -39,3 +48,32 @@ left: 37% ;
 top: 8%;
 }
 
+.box::before { display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer; 
+    font-size: 80px ;
+    margin-top: 10px ;
+}
+
+a:link, a:visited {
+    text-transform: uppercase;
+    -moz-transition:all .6s;
+    -webkit-transition:all .6s;
+    -o-transition:all .6s;
+    background-color: rgba(157, 152, 255, 1); 
+    color:white; 
+    font-family: anton, sans-serif;
+    font-size: 30px ; 
+text-decoration: none ;
+padding: 5px 20px 5px 95px ;
+position: absolute ;
+left: 37% ;
+bottom: 15% ;
+width: 190px ;}
+
+a:hover { -moz-transition:all .6s;
+    -webkit-transition:all .6s;
+    -o-transition:all .6s;
+}
